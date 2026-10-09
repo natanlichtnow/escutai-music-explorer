@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navigation__link {
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.navigation__link:hover,
+.navigation__link--active {
+  color: var(--color-blue);
+}
+
+@media (max-width: 640px) {
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: clamp(18px, 8vw, 32px);
+    padding-top: 5px;
+  }
+}

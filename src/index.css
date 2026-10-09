@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('./fonts/manrope-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #1d2230;
+  background: #f7f9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --color-ink: #1d2230;
+  --color-muted: #687286;
+  --color-blue: #2878f0;
+  --color-blue-dark: #155bc7;
+  --color-blue-soft: #eaf2ff;
+  --color-line: #e3e8f0;
+  --color-paper: #fff;
+  --font-heading: Manrope, 'Segoe UI', sans-serif;
+  --page-width: 1120px;
+  --shadow-card: 0 14px 38px rgb(38 62 105 / 9%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #2878f0;
+}
+
+:focus-visible {
+  outline: 3px solid #80b4ff;
+  outline-offset: 3px;
+}
