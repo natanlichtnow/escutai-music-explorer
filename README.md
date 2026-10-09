@@ -1,6 +1,8 @@
 # Escutaí
 
-Aplicativo front-end de descoberta musical, desenvolvido com React e Vite. A busca consulta o catálogo de músicas da iTunes Search API diretamente do navegador.
+Aplicativo front-end de descoberta musical, desenvolvido com React e Vite. Pesquise músicas e artistas no catálogo da iTunes Search API diretamente pelo navegador.
+
+**Site publicado:** [https://around-natan.chickenkiller.com](https://around-natan.chickenkiller.com)
 
 ## Funcionalidades
 
@@ -9,24 +11,37 @@ Aplicativo front-end de descoberta musical, desenvolvido com React e Vite. A bus
 - Cartões com capa, álbum, artista e prévia de áudio quando disponível.
 - Resultados apresentados em blocos de três, com opção para carregar mais.
 - Estados de carregamento, busca sem resultados e falha na solicitação.
-- Formulários de login e cadastro demonstrativos; não criam contas nem autenticam usuários.
+- Formulários demonstrativos de login e cadastro. Não criam contas nem autenticam usuários.
 - Layout responsivo, inclusive em larguras de 320 px.
+
+## Tecnologias
+
+- React
+- Vite
+- React Router
+- iTunes Search API
 
 ## Executar localmente
 
 Requer Node.js 20.19+ ou 22.12+.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-## Verificações
+## Verificações e build
 
 ```sh
 npm run lint
 npm run build
 ```
+
+O build de produção é criado na pasta `dist`.
+
+## Publicação
+
+O site está publicado em uma máquina virtual Debian no Google Cloud. O Nginx serve os arquivos estáticos gerados pelo Vite, e sua configuração encaminha rotas da aplicação, como `/music`, para `index.html`.
 
 ## Fonte dos dados
 
